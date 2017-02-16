@@ -58,6 +58,9 @@ with open('data/animal-data.csv', 'rb') as data_file:
 ### Hit me up!
 
 Cody Winchester
+
 Austin American-Statesman
-cjwinchester@gmail.com
-@cody_winchester
+
+[cjwinchester@gmail.com](mailto:cjwinchester@gmail.com)
+
+[@cody_winchester](https://twitter.com/cody_winchester)
