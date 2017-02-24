@@ -10,13 +10,10 @@ import csv
 with open('../data/animal-data.csv', 'r') as data_file:
 
     # read the file into a DictReader object
-    # turn it into a list so we don't have to worry about hitting reset
     reader = csv.DictReader(data_file)
 
-    animal_list = list(reader)
-
     # loop over the rows in your data
-    for row in animal_list:
+    for row in reader:
 
         animal_name = row['Name'].replace('*', '')
         animal_type = row['Animal Type']

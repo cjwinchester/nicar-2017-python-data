@@ -4,7 +4,7 @@ Goal: Print the ~current~ age, in days, of each animal with a DOB
 EXTRA CREDIT 1: Add the logic to exclude animals that were euthanized,
                 because their current age is ~dead~
 
-EXTRA CREDIT 2: Find the record of the oldest animal that surrendered
+EXTRA CREDIT 2: Find the record of the oldest animal surrendered
                 to the shelter during this time period
 """
 
@@ -19,13 +19,10 @@ from datetime import datetime
 with open('../data/animal-data.csv', 'r') as data_file:
 
     # read the file into a DictReader object
-    # turn it into a list so we don't have to worry about hitting reset
     reader = csv.DictReader(data_file)
 
-    animal_list = list(reader)
-
     # loop over the rows in your data
-    for row in animal_list:
+    for row in reader:
 
         animal_dob = row['Date of Birth']
 

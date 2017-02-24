@@ -1,6 +1,6 @@
 """
 Goal 1: Print the 10 most common names of animals surrendered to the shelter
-Goal 1: Print a sorted breakdown of pet types
+Goal 2: Print a sorted breakdown of pet types
 """
 
 from __future__ import print_function
@@ -18,13 +18,10 @@ with open('../data/animal-data.csv', 'r') as data_file:
     pet_type_counter = Counter()
 
     # read the file into a DictReader object
-    # turn it into a list so we don't have to worry about hitting reset
     reader = csv.DictReader(data_file)
 
-    animal_list = list(reader)
-
     # loop over the rows in the data
-    for row in animal_list:
+    for row in reader:
 
         # replace asterisks with nothing
         # https://docs.python.org/3/library/stdtypes.html#str.replace

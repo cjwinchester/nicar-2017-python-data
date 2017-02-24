@@ -17,13 +17,15 @@ We won't be using pandas, Agate or any other popular data analysis library. Inst
 
 We'll mostly be working with a CSV of animal outcome data from the [Austin Animal Center](https://data.austintexas.gov/Health/Austin-Animal-Center-Outcomes/9t4d-g238); find it at `data/animal-data.csv`.
 
+![this is a good outcome](https://media.giphy.com/media/Lr2YomhIBU8LK/giphy.gif)
+
 ### Scripts
 * FILTER: `scripts/filter.py`
 * COUNT: `scripts/count.py`
 * CONCATENATE: `scripts/concatenate.py`
-* MAX/MIN: `scripts/max_min.py`
 * LEFT/RIGHT/MID: `scripts/left_right_mid.py`
 * SORT: `scripts/sort.py`
+* MAX/MIN: `scripts/max_min.py` (uses tax data)
 * SUM: `scripts/sum.py` (uses tax data)
 
 ### Loading data
@@ -57,10 +59,5 @@ with open('data/animal-data.csv', 'rb') as data_file:
 
 ### Hit me up!
 
-Cody Winchester
-
-Austin American-Statesman
-
-[cjwinchester@gmail.com](mailto:cjwinchester@gmail.com)
-
-[@cody_winchester](https://twitter.com/cody_winchester)
+* [cjwinchester@gmail.com](mailto:cjwinchester@gmail.com)
+* [@cody_winchester](https://twitter.com/cody_winchester)

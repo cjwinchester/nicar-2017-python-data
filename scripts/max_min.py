@@ -1,5 +1,5 @@
 """
-Goal: Sum the amount of mixed-beverage taxes collected in TX year to date
+Goal: Find the largest and smallest mixed-beverage tax collection
 """
 
 from __future__ import print_function
@@ -18,8 +18,14 @@ with open('../data/tax-data.csv', 'r') as data_file:
                 .replace(',', '')
                 .replace('$', '')) for x in reader]
 
-    # sum the list
-    tax_sum = sum(payments)
+    # get min
+    tax_min = min(payments)
 
-    # print formatted sum
-    print('\nSum: $' + '{:,.2f}'.format(tax_sum))
+    # get max
+    tax_max = max(payments)
+
+    # print formatted min
+    print('\nMin: $' + '{:,.2f}'.format(tax_min))
+
+    # print formatted max
+    print('Max: $' + '{:,.2f}'.format(tax_max))
